@@ -1,42 +1,33 @@
 // post Reference_Text_Arc code here
-int X= 100;
-int Y =150;
-int bounce= 5;
-int bounce2=3;
-int bounce3=8;
+void setup(){
+size(800,800);
 
-void setup() {
-  size(900, 500);
-}
-void draw() {
-  background(0,0,255);
-  fill(204,229,255);
-  ellipse(X, 180, 50, 50);
-X=X + bounce2;
-  if  (X > 900) {
-    bounce2= -15;
-  }
-  if (X < 0){
- bounce2= +5;
-  }
-  //second circle
-  fill(153,0,0);
-  ellipse(Y, 45, 200, 200);
- Y=Y +bounce;
- 
-if (Y < 0) {
- bounce= +7 ;
-}
-if (Y > 900){
- bounce= -7 ;
 }
 
-  //
 
-  //third circle
-
-  fill(255, 153, 153);
-  ellipse(200, X, 150, 150);
+void draw(){
   
-  save("julia.variable.refrence.draw.pmg");
+  background(204,255,204);
+  fill(51,51,255);
+  textAlign(500);//
+  textSize(90);//
+  text("goodbye",370,600);
+  
+  fill(random(190),random(230),random(90));
+  textAlign(300);//
+  textSize(120);//
+  text("what?",270,300);
+ 
+
+fill(0);//
+textAlign(400);//
+textSize(45);//
+text("hell",370,400);
+
+  noFill();
+strokeWeight(5);
+arc(mouseX+50,mouseY-70,25,25,radians(0),radians(360));
+
+save("JULIA.textandarc.png");
 }
+  
